@@ -18,7 +18,7 @@ public class Invalid extends BaseClass {
         try {
             // Ensure you are actually on the login page first
             if (!driver.getCurrentUrl().contains("/login")) {
-                driver.get("https://d2g8y3won1k29k.cloudfront.net/login"); // Replace with your exact app login URL
+                driver.get("https://d2g8y3won1k29k.cloudfront.net/login"); 
             }
             
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
