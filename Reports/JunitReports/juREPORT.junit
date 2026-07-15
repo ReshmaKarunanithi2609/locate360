@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="114.891" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Locate360 End-to-End Automation Functionality" name="To validate login, billing section, and settings page with valid credentials" time="21.821">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters valid username "ragu.kiaq@gmail.com" and password "Ragu@123".passed
+And The user clicks the login button........................................passed
+Then The user should be successfully redirected to the dashboard............passed
+When The user navigates to the Billing section..............................passed
+Then The user validates that revenue and pending payments are displayed correctly.passed
+When The user navigates to the Settings page................................passed
+And The user updates the profile settings...................................passed
+Then The user verifies that settings are saved successfully.................passed
+And The user clicks the logout button.......................................passed
+Then The user is successfully logged out....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Locate360 End-to-End Automation Functionality" name="Verify regional validation cross-matching rules for State and City" time="42.317">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters valid username "ragu.kiaq@gmail.com" and password "Ragu@123".passed
+And The user clicks the login button........................................passed
+Then The user should be successfully redirected to the dashboard............passed
+When The user navigates to the Billing section..............................passed
+And The user selects State as "Tamil Nadu" and inputs City as "Mumbai"......passed
+And The user saves the billing address details..............................passed
+Then The system should display a regional validation error message..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Locate360 End-to-End Automation Functionality" name="To verify login functionality with invalid credentials - Example #1.1" time="25.295">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters invalid username "admin@wrong.com" and password "Admin123".passed
+And The user clicks the login button........................................passed
+Then The user should see an error message "Invalid credentials".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Locate360 End-to-End Automation Functionality" name="To verify login functionality with invalid credentials - Example #1.2" time="25.137">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters invalid username "admin@locate360.com" and password "WrongPass123".passed
+And The user clicks the login button........................................passed
+Then The user should see an error message "Invalid credentials".............passed
+]]></system-out>
+</testcase>
+</testsuite>

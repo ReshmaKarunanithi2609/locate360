@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="47.154" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Locate360 End-to-End Automation Functionality" name="To verify login functionality with invalid credentials - Example #1.1" time="20.49">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters valid username "ragu.kiaq@gmail.com" and password "Ragu@123".passed
+And The user clicks the login button........................................passed
+When The user enters invalid username "admin@wrong.com" and password "Admin123".passed
+Then The user should see an error message "Invalid credentials".............passed
+]]></system-out>
+</testcase>
+<testcase classname="Locate360 End-to-End Automation Functionality" name="To verify login functionality with invalid credentials - Example #1.2" time="26.358">
+<system-out><![CDATA[
+Given The user is on the Locate360 login page...............................passed
+When The user enters valid username "ragu.kiaq@gmail.com" and password "Ragu@123".passed
+And The user clicks the login button........................................passed
+When The user enters invalid username "admin@locate360.com" and password "WrongPass123".passed
+Then The user should see an error message "Invalid credentials".............passed
+]]></system-out>
+</testcase>
+</testsuite>
