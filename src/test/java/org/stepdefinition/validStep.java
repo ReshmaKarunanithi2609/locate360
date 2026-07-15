@@ -159,7 +159,7 @@ public class validStep extends BaseClass {
             System.out.println("Billing details updated successfully via POJO getters!");
             
         } catch (Exception e) {
-            System.out.println("⚠️ Standard POJO field paths blocked. Running structural layout fallbacks...");
+            System.out.println("Standard POJO field paths blocked. Running structural layout fallbacks...");
             // Index-based structural injection fallback if names change completely
             js.executeScript("var inputs = document.querySelectorAll('input[type=\"text\"], input[type=\"number\"]');" +
                              "if(inputs.length >= 4) {" +
@@ -211,7 +211,7 @@ public class validStep extends BaseClass {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             Actions actions = new Actions(driver);
 
-            System.out.println("🔄 Framework Action: Hovering and Clicking SETTINGS Sidebar Menu...");
+            System.out.println(" Framework Action: Hovering and Clicking SETTINGS Sidebar Menu...");
             WebElement settingsMenu = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='SETTINGS'] | //span[text()='SETTINGS'] | //a[contains(@href,'settings')]")));
             actions.moveToElement(settingsMenu).click().build().perform();
             Thread.sleep(3000);
